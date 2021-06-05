@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pic1"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:gravity="center"
+    tools:context=".HomeScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layoutshape"
+        android:padding="30dp"
+        >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Context and Coordinates"
+        android:background="@drawable/buttonshape1"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_baseline_double_arrow_24"
+        android:textColor="#FFFFFF"
+        android:padding="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:text="Identification"
+        android:background="@drawable/buttonshape2"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_baseline_double_arrow_24"
+        android:padding="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:text="Taphonomy"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_baseline_double_arrow_24"
+        android:background="@drawable/buttonshape3"
+        android:textColor="#FFFFFF"
+        android:padding="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:drawableRight="@drawable/ic_baseline_double_arrow_24"
+        android:background="@drawable/buttonshape4"
+        android:textColor="#FFFFFF"
+        android:padding="30dp"/>
+
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>

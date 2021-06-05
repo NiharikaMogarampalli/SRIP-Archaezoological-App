@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void login(View view) {
         Toast.makeText(this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(MainActivity.this,HomeScreen.class));
     }
 
     public void gotoregister(View view) {
