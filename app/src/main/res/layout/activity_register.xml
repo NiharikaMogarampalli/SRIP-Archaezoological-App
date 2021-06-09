@@ -55,7 +55,22 @@
         android:background="@drawable/shape"
         android:onClick="register"
         android:id="@+id/register"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="25dp"
+        tools:ignore="OnClick" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/registerView"
+            android:layout_width="217dp"
+            android:layout_height="37dp"
+            android:text="@string/already_registered_log_in_here" />
     </LinearLayout>
 
 </LinearLayout>
