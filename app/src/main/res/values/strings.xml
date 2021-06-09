@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ArchaezooApp</string>
+    <string name="already_registered_log_in_here">Already Registered? Log In Here</string>
 </resources>
