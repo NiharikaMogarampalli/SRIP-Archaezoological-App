@@ -37,6 +37,7 @@
         android:background="@drawable/buttonshape2"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
+        android:onClick="gotoidentification"
         android:drawableRight="@drawable/ic_baseline_double_arrow_24"
         android:padding="30dp"/>
     <Button

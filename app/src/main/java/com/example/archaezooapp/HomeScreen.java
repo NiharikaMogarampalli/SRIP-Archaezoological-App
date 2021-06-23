@@ -4,14 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.view.View;
-=======
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
->>>>>>> 79bff1f73815ded282a48d212cd98f6bca6de2f3
 
 import com.google.firebase.auth.FirebaseAuth;
 public class HomeScreen extends AppCompatActivity {
@@ -41,5 +38,9 @@ public class HomeScreen extends AppCompatActivity {
 
     public void gotocontext(View view) {
         startActivity(new Intent(HomeScreen.this,ContextActivity.class));
+    }
+
+    public void gotoidentification(View view) {
+        startActivity(new Intent(HomeScreen.this,IdentificationActivity.class));
     }
 }
