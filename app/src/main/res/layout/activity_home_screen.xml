@@ -60,6 +60,7 @@
         android:drawableRight="@drawable/ic_baseline_double_arrow_24"
         android:background="@drawable/buttonshape4"
         android:textColor="#FFFFFF"
+        android:onClick="gotonotes"
         android:padding="30dp"/>
 
         <Button

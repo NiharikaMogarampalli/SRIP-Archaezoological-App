@@ -47,4 +47,9 @@ public class HomeScreen extends AppCompatActivity {
     public void gototaphonomy(View view) {
         startActivity(new Intent(HomeScreen.this,TaphonomyActivity.class));
     }
+
+    public void gotonotes(View view) {
+        startActivity(new Intent(HomeScreen.this,NotesActivity.class));
+
+    }
 }
