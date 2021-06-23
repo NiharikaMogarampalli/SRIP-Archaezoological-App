@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">ArchaezooApp</string>
+    <string-array name="units">
+        <item>units</item>
+        <item>km</item>
+        <item>ft</item>
+        <item>m</item>
+        <item>cm</item>
+        <item>mm</item>
+    </string-array>
+
+    <string-array name="dimensions">
+        <item>Dimensions</item>
+        <item>inches</item>
+        <item>cm</item>
+        <item>mm</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>Units</item>
+        <item>gm</item>
+        <item>mg</item>
+    </string-array>
+
+
+
 </resources>
