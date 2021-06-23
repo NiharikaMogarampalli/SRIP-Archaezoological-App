@@ -2,6 +2,7 @@
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/contextbackground"
+    android:padding="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 <ScrollView android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,7 +22,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Context and Coordinates "
-            android:textSize="25sp"
+            android:textSize="28sp"
+            android:layout_marginBottom="15dp"
             android:textStyle="bold" />
 
 

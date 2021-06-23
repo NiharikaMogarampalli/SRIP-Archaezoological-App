@@ -45,6 +45,7 @@
         android:layout_marginTop="25dp"
         android:layout_height="wrap_content"
         android:text="Taphonomy"
+        android:onClick="gototaphonomy"
         android:textStyle="bold"
         android:drawableRight="@drawable/ic_baseline_double_arrow_24"
         android:background="@drawable/buttonshape3"
