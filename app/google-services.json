@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "430707074314",
+    "project_id": "archaezooapp",
+    "storage_bucket": "archaezooapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430707074314:android:4f1a5ead492d7700fb86f3",
+        "android_client_info": {
+          "package_name": "com.example.archaezooapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430707074314-jnskannetr2skf5adacnogb6hpngqru7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOPRBaSPtPoPsyiJY604TiI1rC7iETwhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430707074314-jnskannetr2skf5adacnogb6hpngqru7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
