@@ -237,6 +237,8 @@
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/r1"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -244,6 +246,7 @@
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -269,6 +272,8 @@
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/r3"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -276,6 +281,7 @@
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -400,6 +406,8 @@
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/r5"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -407,6 +415,7 @@
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -431,6 +440,8 @@
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/r7"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -438,6 +449,7 @@
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

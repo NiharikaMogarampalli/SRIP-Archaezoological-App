@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".add_item"></activity>
         <activity android:name=".AddNewDisplayOld">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,12 +23,10 @@
         <activity android:name=".TaphonomyActivity" />
         <activity android:name=".IdentificationActivity" />
         <activity android:name=".ContextActivity" />
-        <activity android:name=".HomeScreen"></activity>
+        <activity android:name=".HomeScreen" />
         <activity
             android:name=".splash"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity android:name=".register" />
         <activity android:name=".MainActivity" />
     </application>

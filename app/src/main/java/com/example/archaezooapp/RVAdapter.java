@@ -62,7 +62,9 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RvViewHolder>{
             public void onClick(View v) {
                 String s=sharedPreferences.getString("zone","");
                 Toast.makeText(context, ""+sharedname+s, Toast.LENGTH_SHORT).show();
-                
+                Intent i=new Intent(context,add_item.class);
+                i.putExtra("Shared Preference Name",sharedname);
+                context.startActivity(i);
 
 
             }
