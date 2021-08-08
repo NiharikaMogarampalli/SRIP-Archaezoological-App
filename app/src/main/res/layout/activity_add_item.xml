@@ -10,12 +10,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="ADD Item TO SHEET"
+        android:text="Add Item To File"
         android:padding="10dp"
         android:onClick="additemtosheet"
         android:textSize="20dp"
         android:textColor="#0C0C0C"
-        android:background="#CF4AE6"/>
+        android:background="#8697F3"/>
 
 
 </RelativeLayout>

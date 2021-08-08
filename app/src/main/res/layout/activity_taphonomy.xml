@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
     android:background="@drawable/contextbackground"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    >
+
     <ScrollView android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ContextActivity">
@@ -42,24 +46,29 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r1"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="L1"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="L2"
                     android:layout_marginLeft="20dp"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="L3"
                     android:layout_marginLeft="20dp"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="L4"
@@ -85,18 +94,22 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r5"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="C1"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="C2"
                     android:layout_marginLeft="20dp"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="C3"
@@ -122,33 +135,40 @@
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/r8"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Anthropic"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Post-depositional"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Anthropic Post-depositional"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Recent"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ancient"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Indeterminate"
@@ -173,18 +193,22 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r14"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Total"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Partial"
                     android:layout_marginLeft="20dp"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="None"
@@ -194,7 +218,7 @@
             </RadioGroup>
 
             <EditText
-                android:id="@+id/colour"
+                android:id="@+id/colourofcharring"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -210,7 +234,7 @@
                 android:textStyle="bold" />
 
             <RadioGroup
-                android:id="@+id/Concentration"
+                android:id="@+id/concentration"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -218,12 +242,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:checked="true"
+                    android:id="@+id/r17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -243,6 +270,7 @@
                 android:textStyle="bold" />
 
             <RadioGroup
+
                 android:id="@+id/oxide"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -251,18 +279,22 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r19"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Manganese"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Iron"
                     android:layout_marginLeft="20dp"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="None"
@@ -288,12 +320,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r22"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -319,12 +354,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r24"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -350,12 +388,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r26"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -378,21 +419,26 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="5dp"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/r28"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
+                    android:layout_marginLeft="20dp"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
                     android:layout_marginLeft="20dp"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2"
@@ -400,12 +446,14 @@
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3"
                     android:layout_marginLeft="20dp"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4"
@@ -413,6 +461,7 @@
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5"
@@ -440,12 +489,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r34"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -470,12 +522,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:checked="true"
+                    android:id="@+id/r36"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r37"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -500,12 +555,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r38"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r39"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -530,12 +588,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r40"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r41"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -560,12 +621,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/r42"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r43"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -583,18 +647,22 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:checked="true"
+                    android:id="@+id/r44"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tool"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r45"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ornament"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r46"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Others"
@@ -620,12 +688,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:checked="true"
+                    android:id="@+id/r47"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r48"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -652,12 +723,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:checked="true"
+                    android:id="@+id/r49"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -675,6 +749,7 @@
                 android:textStyle="bold" />
 
             <RadioGroup
+
                 android:id="@+id/scrapingmarks"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -683,12 +758,15 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:checked="true"
+                    android:id="@+id/r51"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r52"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
@@ -716,17 +794,21 @@
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:checked="true"
+                    android:id="@+id/r53"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rodent"
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r54"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Carnivore"
                     android:textStyle="bold" />
                 <RadioButton
+                    android:id="@+id/r55"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Human"
@@ -758,6 +840,8 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:checked="true"
+                    android:id="@+id/r56"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -765,6 +849,7 @@
                     android:textStyle="bold" />
 
                 <RadioButton
+                    android:id="@+id/r57"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -777,6 +862,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="SAVE"
+                android:onClick="savethetaphonomy"
                 android:textColor="#FCFAFF"
                 android:layout_marginTop="25dp"
                 android:textSize="18dp"
@@ -784,11 +870,9 @@
                 android:background="@color/colorPrimary"/>
 
 
-
-
-
         </LinearLayout>
 
     </ScrollView>
 
 </LinearLayout>
+</layout>

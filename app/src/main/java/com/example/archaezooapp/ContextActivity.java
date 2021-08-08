@@ -129,6 +129,7 @@ public class ContextActivity extends AppCompatActivity {
         int genid1=isolated.getCheckedRadioButtonId();
         RadioButton radioButton1 = (RadioButton) findViewById(genid1);
         String isolatedt=radioButton1.getText().toString();
+
         int genid2=articulated.getCheckedRadioButtonId();
         RadioButton radioButton2 = (RadioButton) findViewById(genid2);
         String articulatedt=radioButton2.getText().toString();
@@ -178,7 +179,7 @@ public class ContextActivity extends AppCompatActivity {
         editor.putString("sampled",sampledt);
         editor.putString("photographed",photographedt);
         editor.commit();
-        Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Saved successfully", Toast.LENGTH_SHORT).show();
 
 
     }

@@ -2,6 +2,7 @@ package com.example.archaezooapp;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+import java.io.File;
 import java.util.ArrayList;
 
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RvViewHolder>{
@@ -47,11 +52,9 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RvViewHolder>{
         holder.rvedit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(context, ""+sharedname, Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(context,HomeScreen.class);
                 i.putExtra("Shared Preference Name",sharedname);
                 context.startActivity(i);
-
                 notifyDataSetChanged();
 
             }
@@ -61,11 +64,9 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RvViewHolder>{
             @Override
             public void onClick(View v) {
                 String s=sharedPreferences.getString("zone","");
-                Toast.makeText(context, ""+sharedname+s, Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(context,add_item.class);
                 i.putExtra("Shared Preference Name",sharedname);
                 context.startActivity(i);
-
 
             }
         });

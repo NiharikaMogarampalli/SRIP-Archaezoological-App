@@ -60,8 +60,6 @@ public class AddNewDisplayOld extends AppCompatActivity implements ExampleDialog
 
     @Override
     public void applyTexts(String filename) {
-        Toast.makeText(this, "receiced "+filename, Toast.LENGTH_SHORT).show();
-
         editor.putString(filename,"");
         editor.commit();
         item.add(new RVModel(R.drawable.editicon,""+filename,R.drawable.downloadicon));

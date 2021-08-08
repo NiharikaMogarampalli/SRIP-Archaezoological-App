@@ -35,8 +35,9 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
         Intent i=getIntent();
          shared_preferences_name=i.getStringExtra("Shared Preference Name");
-        Toast.makeText(this, ""+shared_preferences_name, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Editing the file "+shared_preferences_name, Toast.LENGTH_SHORT).show();
 
+        /*
         logoutBtn = findViewById(R.id.logoutButton);
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +47,7 @@ public class HomeScreen extends AppCompatActivity {
                 Intent intoLogin = new Intent(HomeScreen.this,MainActivity.class);
                 startActivity(intoLogin);
             }
-        });
+        });*/
     }
 
     public void gotocontext(View view) {
@@ -56,19 +57,21 @@ public class HomeScreen extends AppCompatActivity {
     }
 
     public void gotoidentification(View view) {
-        startActivity(new Intent(HomeScreen.this,IdentificationActivity.class));
-        SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-        String s=sharedPreferences.getString("name","");
-        String s2=sharedPreferences.getString("pass","");
-        Toast.makeText(this, ""+s+s2, Toast.LENGTH_SHORT).show();
+        Intent i=new Intent(HomeScreen.this,IdentificationActivity.class);
+        i.putExtra("Shared Preference Name",shared_preferences_name);
+        startActivity(i);
     }
 
     public void gototaphonomy(View view) {
-        startActivity(new Intent(HomeScreen.this,TaphonomyActivity.class));
+        Intent i=new Intent(HomeScreen.this,TaphonomyActivity.class);
+        i.putExtra("Shared Preference Name",shared_preferences_name);
+        startActivity(i);
     }
 
     public void gotonotes(View view) {
-        startActivity(new Intent(HomeScreen.this,NotesActivity.class));
+        Intent i=new Intent(HomeScreen.this,NotesActivity.class);
+        i.putExtra("Shared Preference Name",shared_preferences_name);
+        startActivity(i);
 
     }
 }
