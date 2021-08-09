@@ -90,13 +90,30 @@
                 android:hint="number"
                 android:inputType="phone" />
 
-            <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+        <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="3D Location"
+                android:text="Location"
+            android:layout_weight="1"
                 android:textSize="25sp"
                 android:textStyle="bold" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E4FAF7"
+                android:text="Get coordinates"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
 
             <LinearLayout
@@ -108,92 +125,46 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="X:"
+                    android:text="Latitude    :- "
                     android:textSize="25sp"
-                    android:textStyle="bold" />
+                    />
 
 
-                <EditText
+                <TextView
                     android:id="@+id/xpt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:layout_weight="1"
                     android:inputType="number"
+                    android:text="_____________"
                     android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Y:"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-
-                <EditText
-                    android:id="@+id/ypt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Z:"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-
-                <EditText
-                    android:id="@+id/zpt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:textSize="20dp" />
-
-                <Spinner
-                    android:id="@+id/sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:entries="@array/units" />
-
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:gravity="bottom"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:text="Geo cordinates"
-                    android:textSize="18dp" />
+                    android:text="Longitude :- "
+                    android:textSize="25sp"
+                    />
 
-                <Button
+
+                <TextView
+                    android:id="@+id/ypt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="#E4FAF7"
-                    android:text="Get coordinates"
-                    android:textSize="9dp"
-                    android:textStyle="bold" />
-
+                    android:layout_marginTop="20dp"
+                    android:text="____________"
+                    android:textSize="20dp" />
             </LinearLayout>
+
+
+
 
             <EditText
                 android:id="@+id/orientation"
