@@ -15,11 +15,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".add_item"></activity>
         <activity android:name=".AddNewDisplayOld">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".NotesActivity" />
         <activity android:name=".TaphonomyActivity" />
@@ -28,7 +24,15 @@
         <activity android:name=".HomeScreen" />
         <activity
             android:name=".splash"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
         <activity android:name=".register" />
         <activity android:name=".MainActivity" />
     </application>

@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                             if (!task.isSuccessful()) {
                                 Toast.makeText(MainActivity.this, "Login Error!Login Again. ", Toast.LENGTH_SHORT).show();
                             } else {
-                                Intent intoHome = new Intent(MainActivity.this, HomeScreen.class);
+                                Intent intoHome = new Intent(MainActivity.this, AddNewDisplayOld.class);
                                 startActivity(intoHome);
                             }
                         }

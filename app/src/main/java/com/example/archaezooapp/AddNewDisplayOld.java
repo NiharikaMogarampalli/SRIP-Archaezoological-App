@@ -66,4 +66,19 @@ public class AddNewDisplayOld extends AppCompatActivity implements ExampleDialog
 
     }
 
+    protected void onPause() {
+        super.onPause();
+    }
+    protected void onStop()
+    {
+        super.onStop();
+    }
+   protected void onResume()
+   {
+       super.onResume();
+   }
+   protected void onRestart()
+   {
+       super.onRestart();
+   }
 }

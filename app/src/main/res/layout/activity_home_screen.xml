@@ -63,11 +63,11 @@
         android:onClick="gotonotes"
         android:padding="30dp"/>
 
-        <Button
+       <!-- <Button
             android:id="@+id/logoutButton"
             android:layout_width="153dp"
             android:layout_height="wrap_content"
-            android:text="LOGOUT" />
+            android:text="LOGOUT" />  -->
 
 </LinearLayout>
 
