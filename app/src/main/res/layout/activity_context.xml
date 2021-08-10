@@ -110,6 +110,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#E4FAF7"
+                android:onClick="getcordinates"
                 android:text="Get coordinates"
                 android:textSize="9dp"
                 android:textStyle="bold" />
@@ -126,18 +127,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Latitude    :- "
-                    android:textSize="25sp"
+                    android:textSize="18sp"
                     />
 
 
                 <TextView
-                    android:id="@+id/xpt"
+                    android:id="@+id/latpt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:inputType="number"
-                    android:text="_____________"
-                    android:textSize="20dp" />
+                    android:text="____________"
+                    android:textSize="18dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -150,17 +151,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Longitude :- "
-                    android:textSize="25sp"
+                    android:textSize="18sp"
                     />
 
 
                 <TextView
-                    android:id="@+id/ypt"
+                    android:id="@+id/longpt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:text="____________"
-                    android:textSize="20dp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
 
